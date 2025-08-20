@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>HTML Table Example</title>
+</head>
+
+<body>
+    <h2 id="tableHeading">Weekly Course Schedule</h2>
+    <div class="table-wrapper">
+        <table aria-labelledby="tableHeading" aria-label="Weekly Course Schedule">
+            <caption>Fig 1: Schedules for Semester 4 courses.</caption>
+            <thead>
+                <tr>
+                    <th id="course" scope="col">Course</th>
+                    <th id="monday" scope="col">Monday</th>
+                    <th id="tuesday" scope="col">Tuesday</th>
+                    <th id="wedthur" scope="colgroup" colspan="2">Wednesday & Thursday</th>
+                    <th id="friday" scope="col">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="math" scope="row" headers="course">Math</th>
+                    <td headers="monday math">10:00 - 11:00</td>
+                    <td headers="tuesday math">12:00 - 13:00</td>
+                    <td headers="wedthur math">10:00 - 11:00</td>
+                    <td headers="wedthur math">10:00 - 11:00</td>
+                    <td headers="friday math">PARTY</td>
+                </tr>
+                <tr>
+                    <th id="biology" scope="row" headers="course">Biology</th>
+                    <td headers="monday biology">11:00 - 12:00</td>
+                    <td headers="tuesday biology">16:00 - 17:00</td>
+                    <td headers="wedthur biology">10:00 - 11:00</td>
+                    <td headers="wedthur biology">10:00 - 11:00</td>
+                    <td headers="friday biology">PARTY</td>
+                </tr>
+                <tr>
+                    <th id="chemistry" scope="row" headers="course">Chemistry</th>
+                    <td headers="monday chemistry">11:00 - 12:00</td>
+                    <td headers="tuesday chemistry">16:00 - 17:00</td>
+                    <td headers="wedthur chemistry">10:00 - 11:00</td>
+                    <td headers="wedthur chemistry">10:00 - 11:00</td>
+                    <td headers="friday chemistry">PARTY</td>
+                </tr>
+                 <tr>
+                    <th id="history" scope="row" headers="course">History</th>
+                    <td headers="monday history">11:00 - 12:00</td>
+                    <td headers="tuesday history">16:00 - 17:00</td>
+                    <td headers="wedthur history">10:00 - 11:00</td>
+                    <td headers="wedthur history">10:00 - 11:00</td>
+                    <td headers="friday history">PARTY</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th id="capstone" scope="row" headers="course">Capstone</th>
+                    <td headers="monday capstone">-</td>
+                    <td headers="tuesday capstone">-</td>
+                    <td headers="wedthur capstone">-</td>
+                    <td headers="wedthur capstone">-</td>
+                    <td headers="friday capstone">PARTY</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>

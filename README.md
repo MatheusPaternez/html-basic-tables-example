@@ -1,1 +1,1 @@
-# html-basic-tables-example
+A basic example of tables in HTML.
